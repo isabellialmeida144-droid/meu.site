@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comer Bem Faz Bem!</title>
+    <!-- Inclui Tailwind CSS para estilização rápida e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Define a fonte Inter para todo o site -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif; /* Aplica a fonte Inter ao corpo */
+            scroll-behavior: smooth; /* Adiciona rolagem suave para navegação */
+        }
+        /* Estilos personalizados para o botão de rolagem suave */
+        .scroll-button {
+            transition: transform 0.3s ease-in-out;
+        }
+        .scroll-button:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navegação Superior -->
+    <nav class="bg-gradient-to-r from-emerald-500 to-lime-600 p-4 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <a href="#home" class="text-white text-3xl font-bold mb-4 md:mb-0 rounded-lg p-2 hover:bg-white hover:text-emerald-600 transition duration-300">
+                🌱 Comer Bem Faz Bem!
+            </a>
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-3">
+                <a href="#receitas" class="text-white text-lg font-semibold hover:text-emerald-100 transition duration-300 rounded-lg py-2 px-4 hover:bg-emerald-700">Receitas</a>
+                <a href="#desafios" class="text-white text-lg font-semibold hover:text-emerald-100 transition duration-300 rounded-lg py-2 px-4 hover:bg-emerald-700">Desafios</a>
+                <a href="#sobre-nos" class="text-white text-lg font-semibold hover:text-emerald-100 transition duration-300 rounded-lg py-2 px-4 hover:bg-emerald-700">Sobre Nós</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção de Boas-Vindas (Início) -->
+    <section id="home" class="min-h-screen bg-gradient-to-br from-emerald-100 to-lime-200 flex items-center justify-center p-6 md:p-12">
+        <div class="text-center bg-white p-8 md:p-12 rounded-2xl shadow-xl max-w-4xl border-4 border-emerald-300">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-emerald-700 leading-tight mb-6">
+                Descubra o Prazer de Comer Bem e Viver Melhor!
+            </h1>
+            <p class="text-lg md:text-xl text-gray-700 mb-8">
+                Nosso projeto de extensão é dedicado a te inspirar a adotar hábitos alimentares saudáveis, com receitas deliciosas e desafios divertidos para toda a família.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#receitas" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 scroll-button">
+                    Explore Nossas Receitas
+                </a>
+                <a href="#desafios" class="bg-lime-600 hover:bg-lime-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 scroll-button">
+                    Participe dos Desafios
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Receitas -->
+    <section id="receitas" class="py-16 md:py-24 bg-white p-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-emerald-700 mb-6">Receitas Saborosas e Saudáveis</h2>
+            <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                Prepare pratos incríveis que nutrem seu corpo e alegram seu paladar. Aqui você encontra opções para todos os momentos do dia!
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cartão de Receita 1 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200">
+                    <img src="https://placehold.co/600x400/D1FAE5/10B981?text=Salada+Colorida" alt="Salada Colorida" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-emerald-600 mb-3">Salada de Quinoa com Vegetais Frescos</h3>
+                        <p class="text-gray-700 mb-4">Uma salada nutritiva, perfeita para um almoço leve e cheio de energia. Rica em proteínas e fibras.</p>
+                        <ul class="text-sm text-gray-600 list-disc list-inside mb-4">
+                            <li>Tempo de Preparo: 20 min</li>
+                            <li>Dificuldade: Fácil</li>
+                            <li>Ingredientes: Quinoa, tomate, pepino, pimentão, azeite, limão.</li>
+                        </ul>
+                        <button class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2 px-5 rounded-full shadow-md transform transition-all duration-300 hover:scale-105">
+                            Ver Receita Completa
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cartão de Receita 2 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200">
+                    <img src="https://placehold.co/600x400/D1FAE5/10B981?text=Smoothie+Verde" alt="Smoothie Verde" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-emerald-600 mb-3">Smoothie Verde Detox</h3>
+                        <p class="text-gray-700 mb-4">Comece o dia com um impulso de nutrientes! Ideal para desintoxicar e energizar seu corpo.</p>
+                        <ul class="text-sm text-gray-600 list-disc list-inside mb-4">
+                            <li>Tempo de Preparo: 5 min</li>
+                            <li>Dificuldade: Muito Fácil</li>
+                            <li>Ingredientes: Espinafre, banana, maçã, água de coco, gengibre.</li>
+                        </ul>
+                        <button class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2 px-5 rounded-full shadow-md transform transition-all duration-300 hover:scale-105">
+                            Ver Receita Completa
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cartão de Receita 3 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200">
+                    <img src="https://placehold.co/600x400/D1FAE5/10B981?text=Frango+Assado" alt="Frango Assado com Legumes" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-emerald-600 mb-3">Frango Assado com Legumes Coloridos</h3>
+                        <p class="text-gray-700 mb-4">Uma refeição completa e saborosa para toda a família. Simples de preparar e muito saudável.</p>
+                        <ul class="text-sm text-gray-600 list-disc list-inside mb-4">
+                            <li>Tempo de Preparo: 45 min</li>
+                            <li>Dificuldade: Média</li>
+                            <li>Ingredientes: Peito de frango, brócolis, cenoura, batata doce, azeite, ervas.</li>
+                        </ul>
+                        <button class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2 px-5 rounded-full shadow-md transform transition-all duration-300 hover:scale-105">
+                            Ver Receita Completa
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Desafios -->
+    <section id="desafios" class="py-16 md:py-24 bg-lime-50 p-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-lime-700 mb-6">Desafios para uma Vida Mais Saudável</h2>
+            <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                Nossos desafios foram criados para te ajudar a criar novos hábitos e manter a motivação na sua jornada por uma alimentação melhor!
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cartão de Desafio 1 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-lime-600 mb-3">Desafio "Beba Mais Água" (7 Dias)</h3>
+                        <p class="text-gray-700 mb-4">
+                            Comprometa-se a beber a quantidade diária recomendada de água por uma semana. A hidratação é fundamental!
+                        </p>
+                        <ul class="text-sm text-gray-600 list-disc list-inside mb-4">
+                            <li>Meta: 8 copos de água por dia.</li>
+                            <li>Benefícios: Mais energia, melhora da pele, concentração.</li>
+                            <li>Dica: Use uma garrafa de água reutilizável para te lembrar.</li>
+                        </ul>
+                        <button class="bg-lime-500 hover:bg-lime-600 text-white font-bold py-2 px-5 rounded-full shadow-md transform transition-all duration-300 hover:scale-105">
+                            Participar do Desafio
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cartão de Desafio 2 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-lime-600 mb-3">Desafio "Menos Ultraprocessados" (15 Dias)</h3>
+                        <p class="text-gray-700 mb-4">
+                            Reduza o consumo de alimentos ultraprocessados por duas semanas. Descubra o sabor dos alimentos de verdade!
+                        </p>
+                        <ul class="text-sm text-gray-600 list-disc list-inside mb-4">
+                            <li>Meta: Substituir 3 ultraprocessados por dia por in natura.</li>
+                            <li>Benefícios: Mais saúde, menos inflamação, melhor digestão.</li>
+                            <li>Dica: Planeje suas refeições e lanches com antecedência.</li>
+                        </ul>
+                        <button class="bg-lime-500 hover:bg-lime-600 text-white font-bold py-2 px-5 rounded-full shadow-md transform transition-all duration-300 hover:scale-105">
+                            Participar do Desafio
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cartão de Desafio 3 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-lime-600 mb-3">Desafio "5 Porções de Frutas e Vegetais" (30 Dias)</h3>
+                        <p class="text-gray-700 mb-4">
+                            Incorpore 5 porções de frutas e vegetais em sua dieta diária durante um mês. Cores na sua mesa, saúde na sua vida!
+                        </p>
+                        <ul class="text-sm text-gray-600 list-disc list-inside mb-4">
+                            <li>Meta: Consumir 5 porções diárias.</li>
+                            <li>Benefícios: Vitaminas, minerais, fibras, prevenção de doenças.</li>
+                            <li>Dica: Varie as cores para obter mais nutrientes.</li>
+                        </ul>
+                        <button class="bg-lime-500 hover:bg-lime-600 text-white font-bold py-2 px-5 rounded-full shadow-md transform transition-all duration-300 hover:scale-105">
+                            Participar do Desafio
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre-nos" class="py-16 md:py-24 bg-white p-6">
+        <div class="container mx-auto text-center max-w-4xl">
+            <h2 class="text-4xl font-bold text-emerald-700 mb-6">Sobre o Nosso Projeto</h2>
+            <p class="text-xl text-gray-600 mb-8">
+                Somos um projeto de extensão dedicado a promover a saúde e o bem-estar através da educação alimentar. Acreditamos que pequenas mudanças podem gerar um grande impacto na qualidade de vida.
+            </p>
+            <p class="text-lg text-gray-700 mb-8">
+                Nosso objetivo é desmistificar a alimentação saudável, tornando-a acessível, prazerosa e parte do dia a dia de todos. Queremos te empoderar com conhecimento e ferramentas para fazer escolhas mais nutritivas para você e sua família.
+            </p>
+            <div class="flex justify-center items-center gap-4 text-gray-600">
+                <span class="text-2xl">💚</span>
+                <p class="text-lg font-semibold">Junte-se a nós nesta jornada!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white p-6 text-center">
+        <div class="container mx-auto">
+            <p class="text-sm">&copy; 2025 Projeto de Extensão - Comer Bem Faz Bem. Todos os direitos reservados.</p>
+            <p class="text-sm mt-2">Feito com carinho para uma vida mais saudável.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
